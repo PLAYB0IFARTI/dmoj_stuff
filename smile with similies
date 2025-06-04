@@ -1,0 +1,13 @@
+inte1 = int(input())
+inte2 = int(input())
+adjlist = []
+itemlist = []
+for x in range(inte1):
+    adj = input()
+    adjlist.append(adj)
+for x in range(inte2):
+    item = input()
+    itemlist.append(item)
+for x in range(len(adjlist)):
+    for l in range(len(itemlist)):
+        print(adjlist[x],"as", itemlist[l])
