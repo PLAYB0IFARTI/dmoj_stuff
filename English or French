@@ -1,0 +1,18 @@
+#james zheng 
+o = int(input())
+num1 = 0
+num2 = 0
+for x in range(o):
+    k = input()
+    ts = k.count("T")
+    Ts = k.count("t")
+    ss = k.count("s")
+    Ss = k.count("S")
+    num1 += ts
+    num1 += Ts
+    num2 += ss
+    num2 += Ss
+if num1 > num2:
+    print("English")
+elif num1 < num2 or num1 == num2:
+    print("French")
