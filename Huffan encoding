@@ -1,0 +1,24 @@
+#JAMES ZHENG
+#huffman code in dmoj
+times = int(input())
+dicti = {} #Used to add stuff
+#goes thru inputs, splits them and the split 
+#the split makes it into a list kind of thing
+#adds it to the dictionary
+for num in range(times):
+    inpt = input()
+    a = inpt.split()
+    dicti[a[1]] = a[0]
+message = input()
+#makes new statement to translate for the numbers
+newmessage = ""
+key = ""
+for digit in message:
+    #adds the digits into the variable
+    key += digit
+    #if variable has a thing in the key, it does the if operaiton
+    if key in dicti.keys():
+        newmessage += dicti[key]
+        #resets the variable
+        key = ""
+print(newmessage)
